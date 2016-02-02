@@ -54,7 +54,7 @@ public class WaitAndNotifyOnBuffer {
 				
 				try {
 					blockingBuffer.put(i);
-					TimeUnit.SECONDS.sleep(3);
+					TimeUnit.SECONDS.sleep(1);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -76,7 +76,7 @@ public class WaitAndNotifyOnBuffer {
 				
 				try {
 					blockingBuffer.take();
-					TimeUnit.SECONDS.sleep(5);
+					TimeUnit.SECONDS.sleep(3);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
