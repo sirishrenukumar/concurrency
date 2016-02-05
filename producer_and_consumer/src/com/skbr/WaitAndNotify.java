@@ -29,7 +29,7 @@ public class WaitAndNotify {
 						}
 					}
 					System.out.println("Produced : " + i);
-					queue.add(i);
+					queue.offer(i);
 					queue.notify();
 				}
 			}
@@ -56,7 +56,7 @@ public class WaitAndNotify {
 							e.printStackTrace();
 						}
 					}
-					System.out.println("Consumed : " + queue.remove());
+					System.out.println("Consumed : " + queue.poll());
 					queue.notify();
 				}
 			}
